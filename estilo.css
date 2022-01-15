@@ -1,0 +1,91 @@
+div {
+    width: 200px;
+    height: 200px;
+  }
+
+
+  img{
+    width: 200px;
+    height: 200px;
+  }
+  h1{
+    text-align:center; 
+    color:black;
+  }
+  .azul{
+   background-color:darkblue;
+   display:block;
+   margin-left: auto;
+   margin-right: auto;
+   border: 1px solid transparent;
+  }
+
+.azul2{
+  background-color:blue;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid transparent;
+  }
+
+
+.azul3{
+  background-color:lightblue;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid transparent;
+  }
+
+.azul4{
+  background-color:turquoise;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid transparent;
+  }
+
+
+.fundo1{
+  background-color:aquamarine; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 7vh; width: 100vw;
+  font-size: 50px;
+  border: 1px solid transparent;
+  }
+
+.azul:hover{
+  border-color: yellow;
+  border-width: 5px;
+  }
+
+.azul2:hover{
+  border-color: yellow;
+  border-width: 5px
+  }
+
+
+.azul3:hover{
+  border-color: yellow;
+  border-width: 5px
+  }
+
+
+.azul4:hover{
+  border-color: yellow;
+  border-width: 5px;
+  }
+
+
+
+
+#fundo{
+  height: 100vh; 
+  width: 100vw; 
+  background: purple;
+  background-image: url(nuvem.png);
+  background-repeat: repeat;
+  }
+  
