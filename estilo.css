@@ -1,7 +1,4 @@
-div {
-    width: 200px;
-    height: 200px;
-  }
+
 
 
   img{
@@ -18,6 +15,8 @@ div {
    margin-left: auto;
    margin-right: auto;
    border: 1px solid transparent;
+   width: 200px;
+   height: 200px;
   }
 
 .azul2{
@@ -26,6 +25,8 @@ div {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid transparent;
+  width: 200px;
+  height: 200px;
   }
 
 
@@ -35,6 +36,8 @@ div {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid transparent;
+  width: 200px;
+  height: 200px;
   }
 
 .azul4{
@@ -43,6 +46,8 @@ div {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid transparent;
+  width: 200px;
+  height: 200px;
   }
 
 
@@ -78,13 +83,24 @@ div {
   border-width: 5px;
   }
 
-
+ .clock {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   color: blue;
+   font-size: 27px;
+   font-family: monospace;
+   background: transparent;
+   width: 200px;
+   height: 100px;
+ }
+ 
+ 
 #mar{
 width:"100%" ;
 direction:"left" ;
 height:"200%";
 }
-
 
 #fundo{
   height: 100vh; 
@@ -93,4 +109,6 @@ height:"200%";
   background-image: url(nuvem.png);
   background-repeat: repeat;
   }
+  
+  
   
