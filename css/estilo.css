@@ -2,8 +2,8 @@
 
 
   img{
-    width: 200px;
-    height: 200px;
+    width: 600px;
+    height: 600px;
   }
   h1{
     text-align:center; 
@@ -11,53 +11,142 @@
   }
   .azul{
    background-color:darkblue;
-   display:block;
-   margin-left: auto;
-   margin-right: auto;
+   position: absolute;
+   left: 800px;
+   top:250px;
    border: 1px solid transparent;
-   width: 200px;
-   height: 200px;
+   width: 600px;
+   height: 600px;
   }
 
 .azul2{
   background-color:blue;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  left: 200px;
+  top:250px;
   border: 1px solid transparent;
-  width: 200px;
-  height: 200px;
+  width: 600px;
+  height: 600px;
   }
 
 
 .azul3{
   background-color:lightblue;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  left: 200px;
+  top:830px;
   border: 1px solid transparent;
-  width: 200px;
-  height: 200px;
+  width: 600px;
+  height: 600px;
   }
 
 .azul4{
   background-color:turquoise;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  left: 800px;
+  top:830px;
   border: 1px solid transparent;
-  width: 200px;
-  height: 200px;
+  width: 600px;
+  height: 600px;
   }
 
+.azul5{
+  background-color:aqua;
+  position: absolute;
+  left: 800px;
+  top:1425px;
+  border: 1px solid transparent;
+  width: 600px;
+  height: 600px;
+  }
 
-.fundo1{
+.azul6{
+  background-color:turquoise;
+  position: absolute;
+  left: 200px;
+  top:1425px;
+  border: 1px solid transparent;
+  width: 600px;
+  height: 600px;
+  }
+.quadro{
+  background-color:white;
+  position: relative;
+  left: 1450px;
+  top:200px;
+  border: 1px solid transparent;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 25), 10px 10px 70px rgba(0, 0, 0, 25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  }
+  .quadro::before{
+    content:"";
+    position: absolute;
+    inset:40px;
+    border-radius: 50%;
+    border:3px dashed black;
+    box-shadow:inset -5px -5px 25px rgba(0, 0, 0, 25), inset 5px 5px 35px rgba(0, 0, 0, 25);
+    
+    
+  }
+.quadro::after{
+    content:"";
+    position: absolute;
+    width: 100px;
+    height : 100px;
+    border-radius: 50%;
+    border:3px dashed black;
+    box-shadow:inset -5px -5px 25px rgba(0, 0, 0, 25), inset 5px 5px 35px rgba(0, 0, 0, 25);
+    background: rgba(255, 255, 255, 15);
+}
+.quadro span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+    transform-origin: top left;
+    animation: animate 2s linear infinite;
+
+}
+@keyframes animate
+{
+  0%{
+    transform: rotate(0deg); 
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.quadro span::before{
+  content: '';
+  position: absolute;
+  top:30px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: darkblue;
+  transform-origin: top left;
+  transform: rotate(35deg);
+  filter: blur(30px) drop-shadow(50px  50px 50px skyblue);
+  opacity: 0.75;
+
+}
+.ms{
   background-color:aquamarine; 
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 7vh; width: 100vw;
-  font-size: 50px;
+  height: 7vh; width: 200vw;
+  font-size: 100px;
   border: 1px solid transparent;
   }
 
@@ -84,15 +173,17 @@
   }
 
  .clock {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   color: blue;
-   font-size: 27px;
+   position:absolute;
+   top:900px;
+   left:1450px;
+   color: brown;
+   font-size: 70px;
    font-family: monospace;
-   background: transparent;
-   width: 200px;
-   height: 100px;
+   background: burlywood;
+   width: 500px;
+   height: 80px;
+   border-radius: 50%;
+   
  }
  
  
@@ -106,7 +197,7 @@ height:"200%";
   height: 100vh; 
   width: 100vw; 
   background: purple;
-  background-image: url(nuvem.png);
+  background-image: url(nuvem2.png);
   background-repeat: repeat;
   }
   
