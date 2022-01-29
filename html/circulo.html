@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="circulos.css" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+  <section>
+    <svg>
+      <filter id="gooey">
+        <feGaussianBlur in="SourceGraphic" stdDeviation= "10"/>
+        <feColorMatrix values="
+        1 0 0 0 0
+        0 1 0 0 0 
+        0 0 1 0 0
+        0 0 0 20 -10"></feColorMatrix>
+      </filter>
+    </svg>
+    
+<div class="fogo"></div>
+<svg>
+  <filter id="onda">
+    <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" seed="2">
+      <animate attributeName="baseFrequency" dur="60s" values="0.02;0.005;0.02" repeatCount="indefinite">
+    </feTurbulence>
+    <feDisplacementMap in="SourceGraphic" scale="30">
+  </filter>
+  
+  
+</svg>
+<div class="agua">
+  <span style="--i:1;"></span>
+  <span style="--i:2;"></span>
+  <span style="--i:3;"></span>
+  <span style="--i:4;"></span>
+  <span style="--i:5;"></span>
+  <span style="--i:6;"></span>
+  <span style="--i:7;"></span>
+  <span style="--i:8;"></span>
+
+  <span class="rotate" style="--j:0"></span>
+  <span class="rotate" style="--j:1"></span>
+  <span class="rotate" style="--j:2"></span>
+  <span class="rotate" style="--j:3"></span>
+</div>
+</section>
+<div class="azul5"> <div class="circulo">Nao aperte</div></div>
+<div class="azul6">
+  <span></span>
+   <span></span>
+   <span></span>
+    <span></span>
+     <span></span>
+      <span></span>
+       <span></span>
+        <span></span>
+         <span></span>
+          <span></span>
+           <span></span>
+            <span></span>
+             <span></span>
+              <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+</div>
+<div class="quadro">
+  <span></span>
+</div>
+</body>
+
+</html>
