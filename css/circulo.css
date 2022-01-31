@@ -1,4 +1,8 @@
-body{background: black}
+body{background: #262626;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
 section{
   display: flex;
   justify-content: center;
@@ -7,12 +11,242 @@ section{
   background: transparent;
   
 }
+.botao{
+  
+  position: relative;
+
+  width: 1600px;
+  height: 800px;
+  
+  
+}
+
+.botao span{
+  position:absolute;
+  top:0px;
+  left: 0px;
+  width: 160px;
+  height: 80px;
+  background: red;
+  border-radius : 80px;
+  transition: 0.5s;
+  box-shadow: 0 15px 25px darkred;
+  
+}
+.botao input {
+  position: relative;
+  z-index: 1;
+  appearance:none
+
+}
+
+.botao input:checked~ span{
+  
+  background: green;
+  box-shadow: 0 15px 25px darkgreen;
+}
+
+.botao .cara {
+  position:absolute;
+  top:4px;
+  left:4px;
+  width: 72px;
+  height: 72px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.5s;
+  
+  
+}
+
+.botao input:checked ~ .cara{
+  background: white;
+  left:84px;
+}
+
+.botao .cara::before{
+  content:"";
+  position:absolute ;
+  top:22px;
+  left: 12px;
+  width: 12px;
+  height: 12px;
+  background: red;
+  border-radius: 50px;
+  box-shadow: 31px 0 0 red;
+}
+.botao .cara.cara::after{
+  content : "";
+  position : absolute ;
+  bottom:15px;
+  width:30px;
+  height: 6px;
+  left:20px;
+  background: red;
+  border-radius: 35%;
+}
+.botao input:checked ~ .cara::before{
+  background: green;
+  box-shadow: 31px 0 0 green;
+  
+}
+.botao input:checked~.cara::after {
+  background: green;
+   bottom:12px;
+   height: 15px;
+   border-bottom-left-radius: 14px;
+   border-bottom-right-radius: 14px;
+
+}
+.carrega
+{
+  position: absolute;
+  top:2290px;
+  left:1290px;
+}
+.water{
+  position: absolute;
+  background: transparent ;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: 3px solid white;
+  border-top:transparent;
+}
+
+.water h1{
+  padding: 0;
+  margin:0;
+  font-size: 10em;
+  background-clip:text ;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  background-image: url(onda2.png);
+  background-repeat: repeat-x;
+  
+  animation: animate9 10s linear infinite;
+}
+
+@keyframes animate9
+{
+  0%{
+    background-position: left 0px top 80px;
+    
+    
+  }
+  
+  
+  40%{
+    background-position: left 800px top -50px;
+    
+    
+  }
+  
+  80%{
+    background-position: left 1600px top -50px;
+    
+    
+  }
+  
+  
+    100%{
+    background-position: left 2400px top 80px;
+    
+    
+  }
+  
+}
+
+
+ul{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  
+}
+
+ul li{
+  
+  list-style: none;
+  width: 150px;
+  height: 150px;
+  background: red;
+  border-radius: 50%;
+  animation: animate8 1.6s ease-in-out infinite;
+}
+@keyframes animate8
+{
+  
+  0%,40%,100%{
+    transform: scale(0.2);
+  }
+   20%{
+    transform: scale(1);
+  }
+  
+}
+
+ul li:nth-child(1){
+  
+  animation-delay: -1.4s;
+  box-shadow: 0 0 50px red;
+}
+
+ul li:nth-child(2) {
+
+  animation-delay: -1.2s;
+  background: orange;
+  box-shadow: 0 0 50px orange;
+}
+ul li:nth-child(3) {
+
+  animation-delay: -1s;
+  background: yellow;
+  box-shadow: 0 0 50px yellow;
+}
+
+ul li:nth-child(4) {
+
+  animation-delay: -0.8s;
+  background: yellowgreen;
+  box-shadow: 0 0 50px yellowgreen;
+}
+
+ul li:nth-child(5) {
+
+  animation-delay: -0.6s;
+  background: green ;
+  box-shadow: 0 0 50px green;
+}
+
+ul li:nth-child(6) {
+
+  animation-delay: -0.4s;
+  background: skyblue;
+  box-shadow: 0 0 50px skyblue;
+}
+
+ul li:nth-child(7) {
+
+  animation-delay: -0.2s;
+  background: blueviolet;
+  box-shadow: 0 0 50px blueviolet;
+}
+
+
+
+
 .fogo{
   
   background:transparent;
   position: relative;
-  left: 100px;
-  top:100px;
+  left: 890px;
+  top:50px;
   border: 1px solid transparent;
   width: 600px;
   height: 600px;
