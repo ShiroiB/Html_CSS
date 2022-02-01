@@ -11,6 +11,81 @@ section{
   background: transparent;
   
 }
+.circoiris2{
+   background:linear-gradient(to top,blueviolet, crimson,yellow);
+   position: absolute;
+   top:400px;
+   left: 640px;
+   width :200px;
+   height: 200px;
+   border-radius: 50%;
+   animation: rotate3 4s linear infinite;
+}
+
+@keyframes rotate3{
+  to{
+    transform: rotate(-360deg);
+    transform: perspective(500px) rotateY(360deg);
+   filter:hue-rotate(-360deg);
+  }
+}
+
+.circoiris2:after{
+  content: "";
+  position: absolute;
+  top:10px;
+  left:10px;
+  right:10px;
+  bottom:10px;
+  background: #262626;
+  border-radius: 50%;
+  inset: 30px 30px 30px 30px;
+  
+}
+
+
+
+
+.circoiris
+{
+  background:linear-gradient(to top, #262626 40%,crimson);
+  position: absolute;
+  top:500px;
+  left: 900px;
+  width :200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: rotate2 2s linear infinite;
+}
+@keyframes rotate2{
+  to{
+    transform: rotate(360deg);
+    filter:hue-rotate(360deg);
+  }
+}
+
+.circoiris:before{
+  content: "";
+  position: absolute;
+  background:  #262626;
+  inset: 30px 30px 0 0 ;
+  border-radius: 80%;
+  
+}
+
+
+.circoiris:after{
+ content: "";
+ position: absolute;
+ top:70px;
+ right: -8px;
+ width : 40px;
+ height: 40px;
+ background: orangered;
+ border-radius : 50%;
+ box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 75px red;
+}
+
 .botao{
   
   position: relative;
@@ -31,17 +106,15 @@ section{
   border-radius : 80px;
   transition: 0.5s;
   box-shadow: 0 15px 25px darkred;
-  
 }
+
 .botao input {
   position: relative;
   z-index: 1;
-  appearance:none
-
+  appearance:none;
 }
 
 .botao input:checked~ span{
-  
   background: green;
   box-shadow: 0 15px 25px darkgreen;
 }
@@ -55,8 +128,6 @@ section{
   background: white;
   border-radius: 50%;
   transition: 0.5s;
-  
-  
 }
 
 .botao input:checked ~ .cara{
@@ -111,7 +182,8 @@ section{
   left:50%;
   transform: translate(-50%,-50%);
   border: 3px solid white;
-  border-top:transparent;
+  border-bottom: 90px solid white;
+  border-top:40px solid white;
 }
 
 .water h1{
@@ -124,7 +196,6 @@ section{
   text-transform: uppercase;
   background-image: url(onda2.png);
   background-repeat: repeat-x;
-  
   animation: animate9 10s linear infinite;
 }
 
@@ -132,28 +203,20 @@ section{
 {
   0%{
     background-position: left 0px top 80px;
-    
-    
   }
   
   
   40%{
     background-position: left 800px top -50px;
-    
-    
   }
   
   80%{
     background-position: left 1600px top -50px;
-    
-    
   }
   
   
     100%{
     background-position: left 2400px top 80px;
-    
-    
   }
   
 }
