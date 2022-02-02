@@ -11,6 +11,76 @@ section{
   background: transparent;
   
 }
+.smoke{
+  position: absolute;
+  top:2000px;
+  left:1000px;
+  transform: translate(-50%,-50%);
+  
+}
+.fumaca{
+  display:flex;
+  margin:0;
+  padding:0;
+}
+
+
+.smoke .fumaca li{
+list-style: none;
+font-size: 6em;
+color:white;
+font-weight: bold;
+letter-spacing: 10px;
+filter:blur(1px);
+background:transparent ;
+
+}
+
+.fumaca:hover li{
+  animation: animate10 3s linear infinite;
+  
+}
+
+@keyframes animate10{
+  
+  0%{transform: rotate(0deg) translateY(0px);
+    opacity:1;
+    filter:blur(1px);
+  }
+  100%{transform: rotate(45deg) translateY(-200px);
+    opacity: 0;
+    filter:blur(10px)
+    
+  }
+  
+}
+.smoke ul li:nth-child(1) {
+
+  animation-delay: 0.2s;
+}
+
+.smoke ul li:nth-child(2) {
+
+  animation-delay: 0.6s;
+}
+
+.smoke ul li:nth-child(3) {
+
+  animation-delay: 1.0s;
+}
+
+.smoke ul li:nth-child(4) {
+
+  animation-delay: 1.4s;
+
+}
+
+.smoke ul li:nth-child(5) {
+
+  animation-delay: 1.8s;
+
+}
+
 .circoiris2{
    background:linear-gradient(to top,blueviolet, crimson,yellow);
    position: absolute;
@@ -222,7 +292,7 @@ section{
 }
 
 
-ul{
+.carrega ul{
   position: absolute;
   top:50%;
   left:50%;
@@ -233,7 +303,7 @@ ul{
   
 }
 
-ul li{
+.carrega ul li{
   
   list-style: none;
   width: 150px;
@@ -254,47 +324,47 @@ ul li{
   
 }
 
-ul li:nth-child(1){
+.careega ul li:nth-child(1){
   
   animation-delay: -1.4s;
   box-shadow: 0 0 50px red;
 }
 
-ul li:nth-child(2) {
+.careega ul li:nth-child(2) {
 
   animation-delay: -1.2s;
   background: orange;
   box-shadow: 0 0 50px orange;
 }
-ul li:nth-child(3) {
+.carrega ul li:nth-child(3) {
 
   animation-delay: -1s;
   background: yellow;
   box-shadow: 0 0 50px yellow;
 }
 
-ul li:nth-child(4) {
+.carrega ul li:nth-child(4) {
 
   animation-delay: -0.8s;
   background: yellowgreen;
   box-shadow: 0 0 50px yellowgreen;
 }
 
-ul li:nth-child(5) {
+.carrega ul li:nth-child(5) {
 
   animation-delay: -0.6s;
   background: green ;
   box-shadow: 0 0 50px green;
 }
 
-ul li:nth-child(6) {
+.carrega ul li:nth-child(6) {
 
   animation-delay: -0.4s;
   background: skyblue;
   box-shadow: 0 0 50px skyblue;
 }
 
-ul li:nth-child(7) {
+.carrega ul li:nth-child(7) {
 
   animation-delay: -0.2s;
   background: blueviolet;
