@@ -324,13 +324,13 @@ background:transparent ;
   
 }
 
-.careega ul li:nth-child(1){
+.carrega ul li:nth-child(1){
   
   animation-delay: -1.4s;
   box-shadow: 0 0 50px red;
 }
 
-.careega ul li:nth-child(2) {
+.carrega ul li:nth-child(2) {
 
   animation-delay: -1.2s;
   background: orange;
