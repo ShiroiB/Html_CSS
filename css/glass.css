@@ -1,0 +1,97 @@
+*{
+  padding: 0;
+  margin :0;
+}
+
+
+body{
+  background:#F2E8FF ;
+}
+p{
+  font-size: 30px;
+  text-align:justify;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+}
+
+
+
+
+#ima{
+  width: 800px;
+  height: 600px;
+  display: block;
+  margin-top:70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.menu{
+ position: absolute;
+  display: flex;
+  width: 1000px;
+  height: 100px;
+}
+
+.vidro .glass {
+  top:300px;
+  width: 900px;
+  height: 900px;
+  background: #363E99;
+  border-radius: 50%;
+}
+
+.vidro .glass.um .cima{
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  display: block;
+  top:400px;
+  left:250px;
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  border:0.9px solid rgba(255, 255, 255, 0.1) ;
+}
+h1{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.vidro .glass.um .cima h1{
+
+  color: white; 
+  font-size: 80px;
+   font: bold 80px;
+   padding-top: 150px; 
+   text-align: center;
+   text-transform: capitalize;
+  
+}
+.vidro .glass.um .baixo{
+  position:relative;
+  display:flex;
+  top:1300px;
+  left: 1100px;
+  background:#0B1158;
+  height: 200px;
+  width: 200px;
+  border-radius:50%;
+  
+}
+.enfeite{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display:block;
+    top:250px;
+    left:1000px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border:0.9px solid rgba(255, 255, 255, 0.1);
+}
