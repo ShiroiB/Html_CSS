@@ -11,6 +11,52 @@ section{
   background: transparent;
   
 }
+.vidro{
+  width : 100px;
+  height:100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.vidro .glass{
+  position:relative;
+  width:150px;
+  height:150px;
+  margin:100px;
+}
+
+.vidro .glass.um span{
+  position: absolute;
+  top:2000px;
+  left:190px;
+  width: 300px;
+  height:300px;
+  display:block;
+  background: blue;
+  border-radius: 50%;
+  animation: animate11 ease-in-out 2s infinite;
+}
+
+.vidro .glass.um span:nth-child(2) {
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  border:1px solid rgba(255, 255, 255, 0.1) ;
+  animation-delay: -1s;
+}
+@keyframes animate11{
+   
+  0%, 100%{
+    
+    transform:translateX(-180px);
+  }
+  50%{
+    transform:translateX(180px);
+    
+  }
+  
+}
 .smoke{
   position: absolute;
   top:2000px;
@@ -452,8 +498,67 @@ background:transparent ;
   }
 }
 
+.noo{
+  font-family: "poppins";
+  color:white;
+  position:relative;
+  display:flex;
+  top:2100px;
+  justify-content: center;
+  align-items: center;
+  
+}
 
+.noo .fume{
+  
+  transform-style: preserve-3d;
+  animation: animate13 3s linear infinite;
+}
+@keyframes animate13{
+  0%{
+    transform:perspective(1000px) rotateX(0deg);
+  }
+  
+  100%{
+    transform:perspective(1000px) rotateX(360deg);
+  }
+  
+  
+}
+.noo .fume span{
+  position: absolute ;
+  color: floralwhite;
+  font-size: 1.35em;
+  text-transform: uppercase ;
+  line-height: 0.75;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  transform: translate(-50%,-50%) rotateX(calc(var(--i)*36deg)) translateZ(20px);
+}
 
+.noo .fume span i{
+  font-style: normal;
+  color:orange;
+  
+}
+.noo .fume span i:first-child:after{
+  content: "i";
+  font-style: normal;
+  color: floralwhite;
+
+}
+.noo .fume span i:last-child{
+  content: "i";
+  font-style: normal;
+  color: red;
+  filter:blur(2px);
+  text-shadow: -4px 0 2px black,
+  8px 0 20px red,
+  8px 0 20px red,
+  8px 0 20px red,
+  8px 0 0px black,
+  12px 0 20px darkgrey,
+  2px 0 6px lightgrey;
+}
 
 .agua
 {
@@ -821,5 +926,58 @@ svg{
   transform: rotate(35deg);
   filter: blur(30px) drop-shadow(50px  50px 50px skyblue);
   opacity: 0.75;
+
+}
+.water2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: transparent;
+  top: 1900px;
+  left: 140px;
+  transform: translate(-50%, -50%);
+  border: 5px solid blue;
+  border-bottom: 5px solid blue;
+  border-top: transparent;
+  padding: 0;
+  margin: 0;
+  background-image: url(/onda2.png);
+  background-repeat: repeat-x;
+  animation: animate12 10s linear infinite;
+}
+
+@keyframes animate12{
+  0% {
+    background-position: left 0px top 80px;
+  }
+
+
+  40% {
+    background-position: left 800px top -50px;
+  }
+
+  80% {
+    background-position: left 1600px top -50px;
+  }
+
+
+  100% {
+    background-position: left 2400px top 80px;
+  }
+
+}
+
+.water2:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 60px;
+  border: 5px solid blue;
+  border-left: transparent;
+  right: -26px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  top: 10px;
+
 
 }
