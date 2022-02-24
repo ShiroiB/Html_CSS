@@ -285,6 +285,22 @@ background:transparent ;
    border-bottom-right-radius: 14px;
 
 }
+
+.carinha {
+  position : absolute ;
+  top:100px;
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+  background:url(semluz.png);
+  transition: 0.5s;
+}
+
+.botao input:checked~ .carinha{
+  
+  background: url(comluz.png);
+}
+
 .carrega
 {
   position: absolute;
