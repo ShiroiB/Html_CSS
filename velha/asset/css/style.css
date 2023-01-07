@@ -1,0 +1,60 @@
+#dgame{
+    width: 160px;
+    height: 160px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    color:azure;
+
+}
+
+  .posJogo{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    display:flex;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  #p1{
+ 
+    border-right: 1px solid azure;
+    border-bottom: 1px solid azure;
+  }
+  #p2{
+ 
+    border-right: 1px solid azure;
+    border-bottom: 1px solid azure;
+  }
+  #p3{
+    border-bottom: 1px solid azure;
+  }
+  #p4{
+ 
+    border-right: 1px solid azure;
+    border-bottom: 1px solid azure;
+  }
+  #p5{
+ 
+    border-right: 1px solid azure;
+    border-bottom: 1px solid azure;
+  }
+  #p6{
+
+    border-bottom: 1px solid azure;
+  }
+
+  #p7{
+
+    border-right: 1px solid azure;
+    
+  }
+  #p8{
+ 
+    border-right: 1px solid azure;
+
+  }
